@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
   body {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   @media (max-width: 768px) {
     font-size: 20px;
@@ -25,12 +25,15 @@ const GlobalStyle = createGlobalStyle`
 
   input, button {
     border: none;
+    outline: transparent;
   }
   
   button {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0);
-    ::focus {
+    
+
+    ::focus, ::active {
       border: none;
     }
   }
