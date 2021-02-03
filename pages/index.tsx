@@ -1,14 +1,20 @@
 import Head from 'next/head';
+import React from 'react';
+// import Footer from '../components/Footer';
+import Header from '../components/Header';
+import Main from '../components/Main';
 import Layout from '../Layout';
 
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>Bovespa-API</title>
+        <title>brapi - API de Ações da Bovespa</title>
       </Head>
       <Layout>
-        <h1>Front Page</h1>
+        <Header />
+        <Main />
+        {/* <Footer /> */}
       </Layout>
     </div>
   );
