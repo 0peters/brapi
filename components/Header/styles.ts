@@ -15,10 +15,13 @@ export const Container = styled.div<MenuProps>`
   background-color: var(--background);
   font-weight: 600;
 
-  .logo {
-    width: 100px;
-    height: auto;
-    margin-right: 4rem;
+  nav {
+    div {
+      svg {
+        height: auto;
+        margin-right: 4rem;
+      }
+    }
   }
 
   nav {
@@ -81,6 +84,10 @@ export const Container = styled.div<MenuProps>`
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        svg {
+          height: auto;
+        }
       }
 
       .mobile-menu-items {
