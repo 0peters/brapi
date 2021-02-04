@@ -17,6 +17,10 @@ export const Container = styled.div<MenuProps>`
   font-weight: 600;
   box-shadow: 0 3px 5px #dddddd;
 
+  @media (prefers-color-scheme: dark) {
+    box-shadow: 0 3px 5px #111;
+  }
+
   nav {
     display: flex;
     div {
