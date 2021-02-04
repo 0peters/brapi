@@ -12,9 +12,8 @@ const Header: React.FC = () => {
 
   return (
     <Container open={open}>
-      <ul className="mobile-menu">
+      <nav className="mobile-menu">
         <span>
-          {/* <img src={brapiLogo} alt="brapi" className="logo" /> */}
           <Logomark />
 
           <button onClick={() => setOpen(!open)}>
@@ -54,9 +53,8 @@ const Header: React.FC = () => {
             </Link>
           </li>
         </ul>
-      </ul>
+      </nav>
       <nav className="menu">
-        {/* <img src={brapiLogo} alt="brapi" className="logo" /> */}
         <Logomark />
 
         <ul>
@@ -88,10 +86,14 @@ const Header: React.FC = () => {
 
       <ul className="ul-right">
         <li>
-          <a href="#">entrar</a>
+          <Link href="#">
+            <a>entrar</a>
+          </Link>
         </li>
-        <li className="rounded-border">
-          <a href="#">criar conta</a>
+        <li>
+          <Link href="">
+            <a className="rounded-border">criar conta</a>
+          </Link>
         </li>
       </ul>
     </Container>

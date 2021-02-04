@@ -10,22 +10,21 @@ export const Container = styled.div<MenuProps>`
   align-items: center;
   position: sticky;
   top: 0;
-  padding: 2rem 0;
+  /* width: 100vw; */
+  height: 5rem;
   color: var(--text);
   background-color: var(--background);
   font-weight: 600;
+  box-shadow: 0 3px 5px #dddddd;
 
   nav {
+    display: flex;
     div {
       svg {
         height: auto;
         margin-right: 4rem;
       }
     }
-  }
-
-  nav {
-    display: flex;
   }
 
   ul {
@@ -45,16 +44,34 @@ export const Container = styled.div<MenuProps>`
       a {
         color: var(--text);
         cursor: pointer;
+
+        :hover {
+          border-color: var(--main);
+          color: var(--main);
+        }
+
+        :active {
+          border-color: var(--main-dark);
+          color: var(--main-dark);
+        }
       }
     }
 
     ul + ul {
       margin-left: 3rem;
     }
+  }
 
-    button {
-      svg {
-        color: var(--text);
+  button {
+    svg {
+      color: var(--text);
+
+      :hover {
+        color: var(--main);
+      }
+
+      :active {
+        color: var(--main-dark);
       }
     }
   }
@@ -75,15 +92,16 @@ export const Container = styled.div<MenuProps>`
   @media (max-width: 768px) {
     .mobile-menu {
       width: 100vw;
+      height: 3rem;
       display: flex;
       flex-direction: column;
-      padding: 0 2rem;
 
       span {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 0 2rem;
 
         svg {
           height: auto;
@@ -93,6 +111,7 @@ export const Container = styled.div<MenuProps>`
       .mobile-menu-items {
         width: 100%;
         flex-direction: column;
+        background-color: var(--background);
 
         ${(props) =>
           props.open &&
