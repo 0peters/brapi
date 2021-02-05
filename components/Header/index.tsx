@@ -14,7 +14,11 @@ const Header: React.FC = () => {
     <Container open={open}>
       <nav className="mobile-menu">
         <span>
-          <Logomark />
+          <Link href="/">
+            <a>
+              <Logomark />
+            </a>
+          </Link>
 
           <button onClick={() => setOpen(!open)}>
             <FiMenu size={24} />
@@ -33,7 +37,7 @@ const Header: React.FC = () => {
             </Link>
           </li>
           <li>
-            <Link href="#">
+            <Link href="/quotes">
               <a>cotação</a>
             </Link>
           </li>
@@ -55,7 +59,11 @@ const Header: React.FC = () => {
         </ul>
       </nav>
       <nav className="menu">
-        <Logomark />
+        <Link href="/">
+          <a>
+            <Logomark />
+          </a>
+        </Link>
 
         <ul>
           <li>
@@ -71,7 +79,7 @@ const Header: React.FC = () => {
           </li>
 
           <li>
-            <Link href="#">
+            <Link href="/quotes">
               <a>cotação</a>
             </Link>
           </li>

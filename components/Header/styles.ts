@@ -11,6 +11,7 @@ export const Container = styled.div<MenuProps>`
   position: sticky;
   top: 0;
   /* width: 100vw; */
+  z-index: 10;
   height: 5rem;
   color: var(--text);
   background-color: var(--background);

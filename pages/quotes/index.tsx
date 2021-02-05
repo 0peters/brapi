@@ -1,11 +1,10 @@
 import Head from 'next/head';
 import React from 'react';
-// import Footer from '../components/Footer';
-import Header from '../components/Header';
-import Main from '../components/Main';
-import Layout from '../Layout';
+import Header from '../../components/Header';
+import MainQuote from '../../components/MainQuote';
+import Layout from '../../Layout';
 
-const Home = () => {
+const Quotes = () => {
   return (
     <div>
       <Head>
@@ -13,10 +12,10 @@ const Home = () => {
       </Head>
       <Layout>
         <Header />
-        <Main />
+        <MainQuote />
       </Layout>
     </div>
   );
 };
 
-export default Home;
+export default Quotes;

@@ -47,8 +47,8 @@ const Main: React.FC = () => {
               Acesse a nossa interface para cotação em tempo real das ações
               brasileiras
             </p>
-            <Link href="/">
-              <a className="coming-soon">Em Breve</a>
+            <Link href="/quotes">
+              <a>Cotação</a>
             </Link>
           </aside>
           <img src={stockGuy} alt="Person looking at a stock chart" />
