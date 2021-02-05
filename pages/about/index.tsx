@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
-import ComingSoon from '../../components/ComingSoon';
+import MainAbout from '../../components/MainAbout';
 import Header from '../../components/Header';
 import Layout from '../../Layout';
 
@@ -12,7 +12,7 @@ const About: React.FC = () => {
       </Head>
       <Layout>
         <Header />
-        <ComingSoon />
+        <MainAbout />
       </Layout>
     </div>
   );

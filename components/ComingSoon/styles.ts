@@ -8,6 +8,7 @@ export const Container = styled.div`
   padding: 2rem;
   text-align: center;
   height: calc(100vh - 80px);
+  color: var(--text);
 
   img {
     width: 100%;
