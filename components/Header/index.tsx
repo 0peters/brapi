@@ -20,19 +20,19 @@ const Header: React.FC = () => {
             </a>
           </Link>
 
-          <button onClick={() => setOpen(!open)}>
+          <button onClick={() => setOpen(!open)} aria-label="Menu">
             <FiMenu size={24} />
           </button>
         </span>
 
         <ul className="mobile-menu-items">
           <li>
-            <Link href="#">
+            <Link href="/about">
               <a>sobre</a>
             </Link>
           </li>
           <li>
-            <Link href="#">
+            <Link href="/docs">
               <a>docs</a>
             </Link>
           </li>
@@ -42,17 +42,17 @@ const Header: React.FC = () => {
             </Link>
           </li>
           <li>
-            <Link href="#">
+            <Link href="/contact">
               <a>contato</a>
             </Link>
           </li>
           <li>
-            <Link href="#">
+            <Link href="/login">
               <a>entrar</a>
             </Link>
           </li>
           <li>
-            <Link href="#">
+            <Link href="/create-account">
               <a>criar conta</a>
             </Link>
           </li>
@@ -67,13 +67,13 @@ const Header: React.FC = () => {
 
         <ul>
           <li>
-            <Link href="#">
+            <Link href="/about">
               <a>sobre</a>
             </Link>
           </li>
 
           <li>
-            <Link href="#">
+            <Link href="/docs">
               <a>docs</a>
             </Link>
           </li>
@@ -85,7 +85,7 @@ const Header: React.FC = () => {
           </li>
 
           <li>
-            <Link href="#">
+            <Link href="/contact">
               <a>contato</a>
             </Link>
           </li>
@@ -94,12 +94,12 @@ const Header: React.FC = () => {
 
       <ul className="ul-right">
         <li>
-          <Link href="#">
+          <Link href="/login">
             <a>entrar</a>
           </Link>
         </li>
         <li>
-          <Link href="">
+          <Link href="/create-account">
             <a className="rounded-border">criar conta</a>
           </Link>
         </li>

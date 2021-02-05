@@ -79,8 +79,8 @@ const MainQuote = ({
         <section>
           {stocks &&
             stocks.map((stock) => (
-              <Link href={`/quotes/${stock.name}`}>
-                <a key={stock.name} aria-label={`Ação ${stock.name}`}>
+              <Link href={`/quotes/${stock.name}`} key={stock.name}>
+                <a aria-label={`Ação ${stock.name}`}>
                   <aside className="card">
                     <img
                       src={

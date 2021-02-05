@@ -19,7 +19,7 @@ const Main: React.FC = () => {
               Tenha acesso instantâneo aos valores da cotação da bolsa de
               valores
             </p>
-            <Link href="/sobre">
+            <Link href="/about">
               <a>Saiba mais</a>
             </Link>
           </aside>
@@ -59,7 +59,9 @@ const Main: React.FC = () => {
             <h1>Entre em Contato</h1>
             <p>Encontrou algum problema, ou tem alguma sugestão?</p>
             <Link href="https://github.com/alissonsleal/bovespa-api">
-              <a>Github</a>
+              <a target="_blank" rel="noopener noreferrer">
+                Github
+              </a>
             </Link>
           </aside>
           <img src={mainContact} alt="Person looking at a stock chart" />
