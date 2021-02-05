@@ -4,6 +4,7 @@ const GlobalStyle = createGlobalStyle`
     :root{
       --text: #fafafa;
       --background: #201f20;
+      --background-light: #282728;
       --main: #52B788;
       --main-dark: #2D6A4F;
       --main-light: #95D5B2;
@@ -13,7 +14,8 @@ const GlobalStyle = createGlobalStyle`
   @media (prefers-color-scheme: light){
     :root{
       --text: #201f20;
-      --background: #fafafa;
+      --background: #f0f0f0;
+      --background-light: #fafafa;
       --main: #52B788;
       --main-dark: #2D6A4F;
       --main-light: #95D5B2;

@@ -36,6 +36,17 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <link rel="icon" href="favicon.svg" />
+          <meta
+            name="keywords"
+            content="API, Desenvolvimento, Bovespa, Ibovespa, Negócios, Informações financeiras, Investimento, Investidor, Notícias de mercado, Pesquisa de ações, Avaliação de ações, notícias de negócios, economia, finanças, ferramentas de investimento, hipotecas, fundos mútuos, finanças pessoais, cotação, imóveis, aposentadoria, ações, ações, impostos , monitorar portfólio"
+          />
+          <meta name="theme-color" content="#52B788" />
+          <meta
+            name="description"
+            lang="en-US"
+            content="Na brapi, você tem acesso à cotação em tempo real das ações da Ibovespa com um delay de 15 minutos. Você tem acesso à uma API que mostra todos os dados necessarios para você desenvolver a sua própria aplicação relacionada ao mercado de ações brasileiro."
+          />
+          <link rel="manifest" href="/manifest.json" />
         </Head>
         <body>
           <Main />

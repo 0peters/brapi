@@ -1,12 +1,14 @@
 import axios from 'axios';
+import { InferGetStaticPropsType } from 'next';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
 import brapiLogo from '../../assets/logo/logo-brapi-no-background.svg';
+import { getStaticProps } from '../../pages/quotes';
 
 import { Container } from './styles';
 
-interface StocksProps {
+export interface StocksProps {
   logoid: string;
   name: string;
   close: number;
@@ -49,72 +51,14 @@ const numberToPercent = (number: number) => {
   return percent.format(number / 100);
 };
 
-const MainQuote: React.FC = () => {
-  const [stocks, setStocks] = useState<StocksProps[]>();
+const MainQuote = ({
+  stocks,
+}: InferGetStaticPropsType<typeof getStaticProps>) => {
+  // const [stocks, setStocks] = useState<StocksProps[]>();
 
-  useEffect(() => {
-    getData();
-  }, []);
-
-  const getData = async () => {
-    const formData = {
-      filter: [
-        {
-          left: 'volume',
-          operation: 'nempty',
-        },
-        {
-          left: 'type',
-          operation: 'equal',
-          right: 'stock',
-        },
-        {
-          left: 'subtype',
-          operation: 'equal',
-          right: 'common',
-        },
-      ],
-      options: {
-        lang: 'pt',
-        active_symbols_only: true,
-      },
-      symbols: {},
-      columns: [
-        'logoid',
-        'name',
-        'close',
-        'change',
-        'volume',
-        'market_cap_basic',
-        'sector',
-      ],
-      sort: {
-        sortBy: 'volume',
-        sortOrder: 'desc',
-      },
-      range: [0, 20],
-    };
-
-    const response = await axios.post(
-      `https://scanner.tradingview.com/brazil/scan`,
-      formData,
-      { headers: { 'Content-Type': 'application/x-www-form-urlencoded' } },
-    );
-
-    const actualData: StocksProps[] = response.data.data.map((stock: any) => {
-      return {
-        logoid: stock.d[0],
-        name: stock.d[1],
-        close: stock.d[2],
-        change: stock.d[3],
-        volume: stock.d[4],
-        market_cap_basic: stock.d[5],
-        sector: stock.d[6],
-      };
-    });
-
-    setStocks(actualData);
-  };
+  // useEffect(() => {
+  //   getData();
+  // }, []);
 
   return (
     <Container>
@@ -136,7 +80,7 @@ const MainQuote: React.FC = () => {
           {stocks &&
             stocks.map((stock) => (
               <Link href={`/quotes/${stock.name}`}>
-                <a>
+                <a key={stock.name} aria-label={`Ação ${stock.name}`}>
                   <aside className="card">
                     <img
                       src={
@@ -172,7 +116,6 @@ const MainQuote: React.FC = () => {
                 </a>
               </Link>
             ))}
-          {console.log(stocks)}
         </section>
       </main>
     </Container>

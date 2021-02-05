@@ -48,7 +48,7 @@ export const Container = styled.div`
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        background-color: var(--main);
+        background-color: var(--background-light);
         border-radius: 24px;
         z-index: 0;
 
@@ -56,13 +56,23 @@ export const Container = styled.div`
 
         :hover {
           transform: translate3d(-3px, -4px, 0px);
-          box-shadow: 3px 4px 6px #222;
+          box-shadow: 3px 4px 6px #ddd;
         }
 
         :active {
-          background-color: var(--main-dark);
+          background-color: var(--background);
           transform: translate3d(-3px, -4px, 0px);
-          box-shadow: 3px 4px 6px #222;
+          box-shadow: 3px 4px 6px #ddd;
+        }
+
+        @media (prefers-color-scheme: dark) {
+          :hover {
+            box-shadow: 3px 4px 6px #111;
+          }
+
+          :active {
+            box-shadow: 3px 4px 6px #111;
+          }
         }
 
         .card {
@@ -93,7 +103,7 @@ export const Container = styled.div`
             list-style-type: none;
 
             li {
-              color: #fafafa;
+              color: var(--text);
 
               strong {
                 font-size: 14px;

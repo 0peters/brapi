@@ -15,7 +15,7 @@ const Header: React.FC = () => {
       <nav className="mobile-menu">
         <span>
           <Link href="/">
-            <a>
+            <a aria-label="brapi">
               <Logomark />
             </a>
           </Link>
@@ -60,7 +60,7 @@ const Header: React.FC = () => {
       </nav>
       <nav className="menu">
         <Link href="/">
-          <a>
+          <a aria-label="brapi">
             <Logomark />
           </a>
         </Link>

@@ -10,11 +10,10 @@ export const Container = styled.div<MenuProps>`
   align-items: center;
   position: sticky;
   top: 0;
-  /* width: 100vw; */
   z-index: 10;
   height: 5rem;
   color: var(--text);
-  background-color: var(--background);
+  background-color: var(--background-light);
   font-weight: 600;
   box-shadow: 0 3px 5px #dddddd;
 
