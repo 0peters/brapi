@@ -47,6 +47,10 @@ class MyDocument extends Document {
             content="Na brapi, você tem acesso à cotação em tempo real das ações da Ibovespa com um delay de 15 minutos. Você tem acesso à uma API que mostra todos os dados necessarios para você desenvolver a sua própria aplicação relacionada ao mercado de ações brasileiro."
           />
           <link rel="manifest" href="/manifest.json" />
+          <meta
+            name="google-site-verification"
+            content="Gy5EFTeucGOTohOucovRJIzCaWPkQ1qWs3mktuSNyGw"
+          />
         </Head>
         <body>
           <Main />

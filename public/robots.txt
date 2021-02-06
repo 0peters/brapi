@@ -1,0 +1,6 @@
+Sitemap: https://bovespa-api.vercel.app/api/sitemap
+
+User-agent: *
+Allow: /*
+
+Disallow:
