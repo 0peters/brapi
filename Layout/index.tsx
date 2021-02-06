@@ -1,5 +1,6 @@
 import React from 'react';
-import Header from '../components/Header';
+// import Header from '../components/Header';
+import Footer from '../components/Footer';
 import GlobalStyle from './styles';
 
 const Layout: React.FC = ({ children }) => {
@@ -7,6 +8,7 @@ const Layout: React.FC = ({ children }) => {
     <>
       <GlobalStyle />
       {children}
+      <Footer />
     </>
   );
 };

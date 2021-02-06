@@ -44,16 +44,7 @@ export const Container = styled.div`
         p {
           color: inherit;
         }
-
-        h2 {
-          margin: 2rem 0 1rem 0;
-          font-size: 18px;
-        }
       }
-    }
-
-    img {
-      max-width: 40%;
     }
 
     @media (max-width: 768px) {
@@ -62,10 +53,6 @@ export const Container = styled.div`
         aside {
           padding: 0;
         }
-      }
-      img {
-        /* background-color: red; */
-        max-width: 100%;
       }
     }
   }
