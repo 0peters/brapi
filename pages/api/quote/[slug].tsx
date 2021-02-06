@@ -1,5 +1,3 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-
 import axios from 'axios';
 import { NextApiRequest, NextApiResponse } from 'next';
 import { QuoteProps } from '../../../@types/QuoteProps';

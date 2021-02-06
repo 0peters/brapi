@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { FiMenu } from 'react-icons/fi';
 
-// import brapiLogo from '../../assets/logo/logomark-brapi-light.svg';
 import Logomark from '../Logomark';
 
 import { Container } from './styles';

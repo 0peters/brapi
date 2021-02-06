@@ -1,7 +1,6 @@
-import axios from 'axios';
 import { InferGetStaticPropsType } from 'next';
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import brapiLogo from '../../assets/logo/logo-brapi-no-background.svg';
 import { getStaticProps } from '../../pages/quotes';
@@ -54,12 +53,6 @@ const numberToPercent = (number: number) => {
 const MainQuote = ({
   stocks,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
-  // const [stocks, setStocks] = useState<StocksProps[]>();
-
-  // useEffect(() => {
-  //   getData();
-  // }, []);
-
   return (
     <Container>
       <main>
@@ -89,6 +82,7 @@ const MainQuote = ({
                           : brapiLogo
                       }
                       alt={stock.name}
+                      title={stock.name}
                     />
                     <ul>
                       <li>
@@ -99,15 +93,15 @@ const MainQuote = ({
                         <strong>preço</strong>
                         <p>{numberToMoney(stock.close)}</p>
                       </li>
-                      <li>
+                      <li title="Variação %">
                         <strong>variação</strong>
                         <p>{numberToPercent(stock.change)}</p>
                       </li>
-                      <li>
+                      <li title="Volume">
                         <strong>volume</strong>
                         <p>{formatNumber(stock.volume)}</p>
                       </li>
-                      <li>
+                      <li title="Capitalização de Mercado">
                         <strong>cap. mercado</strong>
                         <p>{formatNumber(stock.market_cap_basic)}</p>
                       </li>
