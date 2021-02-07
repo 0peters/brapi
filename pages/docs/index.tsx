@@ -1,18 +1,18 @@
 import Head from 'next/head';
 import React from 'react';
-import ComingSoon from '../../components/ComingSoon';
 import Header from '../../components/Header';
+import MainDocs from '../../components/MainDocs';
 import Layout from '../../Layout';
 
 const Docs: React.FC = () => {
   return (
     <div>
       <Head>
-        <title>brapi - API de Ações da Bovespa</title>
+        <title>brapi - Documentação</title>
       </Head>
       <Layout>
         <Header />
-        <ComingSoon />
+        <MainDocs />
       </Layout>
     </div>
   );

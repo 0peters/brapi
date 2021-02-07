@@ -8,7 +8,7 @@ const login: React.FC = () => {
   return (
     <div>
       <Head>
-        <title>brapi - API de Ações da Bovespa</title>
+        <title>brapi - Entrar</title>
       </Head>
       <Layout>
         <Header />

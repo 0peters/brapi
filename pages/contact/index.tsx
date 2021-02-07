@@ -8,7 +8,7 @@ const Contact: React.FC = () => {
   return (
     <div>
       <Head>
-        <title>brapi - API de Ações da Bovespa</title>
+        <title>brapi - Contato</title>
       </Head>
       <Layout>
         <Header />

@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div>
       <Head>
-        <title>brapi - API de Ações da Bovespa</title>
+        <title>brapi - API de Ações</title>
       </Head>
       <Layout>
         <Header />

@@ -1,21 +1,20 @@
 import Head from 'next/head';
 import React from 'react';
-import MainLegal from '../../components/MainLegal';
 import Header from '../../components/Header';
 import Layout from '../../Layout';
 
-const Legal: React.FC = () => {
+const Docs: React.FC = () => {
   return (
     <div>
       <Head>
-        <title>brapi - Exoneração de responsabilidade</title>
+        <title>brapi - API de Ações da Bovespa</title>
       </Head>
       <Layout>
         <Header />
-        <MainLegal />
+        <p>list page</p>
       </Layout>
     </div>
   );
 };
 
-export default Legal;
+export default Docs;

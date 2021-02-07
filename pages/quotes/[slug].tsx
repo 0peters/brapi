@@ -7,11 +7,11 @@ const Quotes = ({ slug }: any) => {
   return (
     <div>
       <Head>
-        <title>brapi - API de Ações da Bovespa</title>
+        <title>brapi - Detalhes da {slug || 'Ação'}</title>
       </Head>
       <Layout>
         <Header />
-        <h1>{slug}</h1>
+        <h1>{slug || 'Ação'}</h1>
       </Layout>
     </div>
   );

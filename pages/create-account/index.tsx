@@ -8,7 +8,7 @@ const CreateAccount: React.FC = () => {
   return (
     <div>
       <Head>
-        <title>brapi - API de Ações da Bovespa</title>
+        <title>brapi - Criar Conta</title>
       </Head>
       <Layout>
         <Header />

@@ -8,7 +8,7 @@ const About: React.FC = () => {
   return (
     <div>
       <Head>
-        <title>brapi - API de Ações da Bovespa</title>
+        <title>brapi - Sobre a brapi</title>
       </Head>
       <Layout>
         <Header />

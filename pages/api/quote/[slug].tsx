@@ -23,7 +23,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       regularMarketDayRange: data.regularMarketDayRange,
       regularMarketChange: data.regularMarketChange,
       regularMarketChangePercent: data.regularMarketChangePercent,
-      regularMarketTime: new Date(data.regularMarketTime * 1000).toTimeString(),
+      regularMarketTime: new Date(data.regularMarketTime * 1000),
       marketCap: data.marketCap,
       regularMarketVolume: data.regularMarketVolume,
       regularMarketPreviousClose: data.regularMarketPreviousClose,
@@ -42,11 +42,11 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       twoHundredDayAverageChangePercent: data.twoHundredDayAverageChangePercent,
     };
 
-    const dynamicDate = new Date().toTimeString();
+    const dynamicDate = new Date();
 
     res.status(200).json({
       results: quote,
-      updatedAt: dynamicDate,
+      requestedAt: dynamicDate,
     });
   } catch (err) {
     res.status(404).json({ error: err.message });

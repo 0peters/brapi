@@ -77,7 +77,7 @@ const Quotes = ({ stocks }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <div>
       <Head>
-        <title>brapi - API de Ações da Bovespa</title>
+        <title>brapi - Cotação das Ações da Bovespa</title>
       </Head>
       <Layout>
         <Header />
