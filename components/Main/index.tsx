@@ -58,7 +58,7 @@ const Main: React.FC = () => {
           <aside>
             <h1>Entre em Contato</h1>
             <p>Encontrou algum problema, ou tem alguma sugestão?</p>
-            <Link href="https://github.com/alissonsleal/bovespa-api">
+            <Link href="https://github.com/alissonsleal/brapi">
               <a target="_blank" rel="noopener noreferrer">
                 Github
               </a>

@@ -30,6 +30,11 @@ const Footer: React.FC = () => {
         <span>
           <h1>contato</h1>
           <p>brapi@protonmail.com</p>
+          <Link href="http://github.com/alissonsleal/brapi">
+            <a target="_blank" rel="noopener noreferrer">
+              Github
+            </a>
+          </Link>
         </span>
 
         <span>
