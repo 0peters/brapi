@@ -64,8 +64,12 @@ export const Container = styled.div`
 
               padding: 1rem;
               border-radius: 1rem;
-              box-shadow: 3px 3px 3px #ddd;
               cursor: pointer;
+              box-shadow: 3px 3px 3px #ddd;
+
+              @media (prefers-color-scheme: dark) {
+                box-shadow: 3px 3px 3px #111;
+              }
             }
 
             ul {
