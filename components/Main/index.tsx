@@ -51,7 +51,7 @@ const Main: React.FC = () => {
               <a>Cotação</a>
             </Link>
           </aside>
-          <img src={stockGuy} alt="Person looking at a stock chart" />
+          <img src={stockGuy} alt="Pessoa olhando um gráfico de ações" />
         </section>
 
         <section>
@@ -64,7 +64,10 @@ const Main: React.FC = () => {
               </a>
             </Link>
           </aside>
-          <img src={mainContact} alt="Person looking at a stock chart" />
+          <img
+            src={mainContact}
+            alt="Pessoas olhando o celular e logos de mensagem e telefone"
+          />
         </section>
       </main>
     </Container>
