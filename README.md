@@ -27,7 +27,7 @@ Documentação: [https://brapi.ga/docs](https://brapi.ga/docs)
 Providenciamos dados do mercado de ação brasileiro em tempo real e totalmente grátis por enquanto.
 
   <p align="center">
-    <img  max-width="768" src="https://i.imgur.com/ACSGbKi.png">
+    <img  max-width="768" src="https://i.imgur.com/iDRs0lO.png">
   </p>
 <br />
 
@@ -36,7 +36,7 @@ Providenciamos dados do mercado de ação brasileiro em tempo real e totalmente 
 Nossa API não tem limites por enquanto, use a vontade.
 
   <p align="center">
-    <img  max-width="768" src="https://i.imgur.com/AmthmHR.png">
+    <img  max-width="768" src="https://i.imgur.com/QitsOx0.png">
   </p>
 <br />
 

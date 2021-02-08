@@ -27,7 +27,7 @@ Documentation: [https://brapi.ga/docs](https://brapi.ga/docs)
 We provide data from the Brazilian stock market in real time and totally free for now.
 
   <p align="center">
-    <img  max-width="768" src="https://i.imgur.com/ACSGbKi.png">
+    <img  max-width="768" src="https://i.imgur.com/iDRs0lO.png">
   </p>
 <br />
 
@@ -36,11 +36,11 @@ We provide data from the Brazilian stock market in real time and totally free fo
 Our API has no limits for now, use at your will.
 
   <p align="center">
-    <img  max-width="768" src="https://i.imgur.com/AmthmHR.png">
+    <img  max-width="768" src="https://i.imgur.com/QitsOx0.png">
   </p>
 <br />
 
-### De Desenvolvedores para Desenvolvedores
+### From developers to developers
 
 We developed the easiest API to start using, no registration, no credit card and without any type of authentication.
 
@@ -82,7 +82,7 @@ We developed the easiest API to start using, no registration, no credit card and
 
 <br />
 
-## Built Dith:
+## Built With:
 
 - [x] Next.js
 - [x] Typescript
