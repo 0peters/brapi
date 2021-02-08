@@ -8,7 +8,7 @@ const login: React.FC = () => {
   return (
     <div>
       <Head>
-        <title>brapi - Entrar</title>
+        <title>brapi - Entrar na sua conta</title>
       </Head>
       <Layout>
         <Header />

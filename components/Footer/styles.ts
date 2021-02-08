@@ -25,7 +25,7 @@ export const Container = styled.footer`
       display: flex;
       flex-direction: column;
 
-      h1 {
+      h2 {
         font-weight: 600;
         padding: 1rem 0;
       }

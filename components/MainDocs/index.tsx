@@ -269,7 +269,7 @@ export interface RootObject {
               </p>
             </div>
           </aside>
-          <img src={codingImg} />
+          <img src={codingImg} alt="Pessoas programando" />
         </section>
       </main>
     </Container>

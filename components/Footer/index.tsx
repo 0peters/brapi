@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
     <Container>
       <div>
         <span>
-          <h1>brapi</h1>
+          <h2>brapi</h2>
           <Link href="/about">
             <a>sobre</a>
           </Link>
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
         </span>
 
         <span>
-          <h1>contato</h1>
+          <h2>contato</h2>
           <p>brapi@protonmail.com</p>
           <Link href="http://github.com/alissonsleal/brapi">
             <a target="_blank" rel="noopener noreferrer">
@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
         </span>
 
         <span>
-          <h1>sobre nós</h1>
+          <h2>sobre nós</h2>
           <p>
             Ajudamos desenvolvedores a construir o futuro das fintechs
             democratizando o acesso aos dados do mercado financeiro brasileiro.
@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
         </span>
 
         <span>
-          <h1>convide</h1>
+          <h2>convide</h2>
           <p>Compartilhe com seus amigos!</p>
           <Link href="https://api.whatsapp.com/send?text=Quero%20te%20convidar%20para%20conhecer%20o%20brapi,%20o%20jeito%20mais%20f%C3%A1cil%20de%20acessar%20uma%20API%20da%20bolsa%20de%20valores!%20Clique%20no%20link%20para%20ter%20acesso%20gratuitamente%20https://www.brapi.ga/">
             <a className="wpp-button" rel="noreferrer noopener" target="_blank">

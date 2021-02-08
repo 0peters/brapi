@@ -32,7 +32,7 @@ const MainAbout = () => {
             </p>
           </aside>
         </section>
-        <img src={WorkTogetherImg} />
+        <img src={WorkTogetherImg} alt="Pessoas trabalhando junto" />
       </main>
     </Container>
   );
