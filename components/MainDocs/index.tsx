@@ -42,7 +42,7 @@ const MainDocs = () => {
                 Os dados são obtidos a partir do símbolo da empresa como é
                 possível ver abaixo:
                 <br />
-                <code>GET https://bovespa-api.vercel.app/api/quote/COGN3</code>
+                <code>GET https://brapi.ga/api/quote/COGN3</code>
               </p>
             </div>
 
