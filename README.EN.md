@@ -12,28 +12,28 @@
 
 # brapi
 
-Na brapi, você tem acesso à cotação em tempo real das ações da Ibovespa com um delay de 15 minutos. Você tem acesso à uma API que mostra todos os dados necessarios para você desenvolver a sua própria aplicação relacionada ao mercado de ações brasileiro. Ajudamos desenvolvedores a construir o futuro das fintechs democratizando o acesso aos dados do mercado financeiro brasileiro.
+At brapi, you have access to a real-time stock data on the Brazilian stock market with a 15-minute delay. You have access to an API that shows all the necessary data for you to develop your own application related to the Brazilian stock market. We help developers build the future of fintechs by democratizing access to data in the Brazilian financial market.
 
-Funciona com Ações comuns com final 3 e 4. Também funciona com Fundos de Investimento com final 11.
+Works with common Brazilian stock shares ending in 3 and 4(Like PETR4 or COGN3). It also works with Investment Fund stocks ending with end 11(Like BOVA11 or HGLG11).
 
-Saiba mais: [https://brapi.ga](https://brapi.ga)
+Check Here: [https://brapi.ga](https://brapi.ga)
 
-Documentação: [https://brapi.ga/docs](https://brapi.ga/docs)
+Documentation: [https://brapi.ga/docs](https://brapi.ga/docs)
 
-## Recursos
+## Features
 
-### Acesso em tempo real
+### Real Time Data
 
-Providenciamos dados do mercado de ação brasileiro em tempo real e totalmente grátis por enquanto.
+We provide data from the Brazilian stock market in real time and totally free for now.
 
   <p align="center">
     <img  max-width="768" src="https://i.imgur.com/ACSGbKi.png">
   </p>
 <br />
 
-### Requisições Ilimitadas
+### Unlimited Requests
 
-Nossa API não tem limites por enquanto, use a vontade.
+Our API has no limits for now, use at your will.
 
   <p align="center">
     <img  max-width="768" src="https://i.imgur.com/AmthmHR.png">
@@ -42,7 +42,7 @@ Nossa API não tem limites por enquanto, use a vontade.
 
 ### De Desenvolvedores para Desenvolvedores
 
-Desenvolvemos a API mais fácil de começar a utilizar, sem cadastros, sem cartão de crédito e sem qualquer tipo de autenticação.
+We developed the easiest API to start using, no registration, no credit card and without any type of authentication.
 
 ```json
 // GET http://brapi.ga/api/quote/COGN3
@@ -82,7 +82,7 @@ Desenvolvemos a API mais fácil de começar a utilizar, sem cadastros, sem cart�
 
 <br />
 
-## Feito com:
+## Built Dith:
 
 - [x] Next.js
 - [x] Typescript
@@ -90,31 +90,31 @@ Desenvolvemos a API mais fácil de começar a utilizar, sem cadastros, sem cart�
 - [x] Styled-Components
 - [x] Yahoo API
 - [x] TradingView API
-- [x] Deploy na Vercel
+- [x] Deployed to Vercel
 
-## Contribuições
+## Contributions
 
-Sinta-se livre para contribuir ou reportar algum erro ou sujestão.
+Feel free to contribute or report issues. Also, if you have any ideas on new names hit me up.
 
-## Exoneração de Responsabilidade
+## Disclaimer
 
-Esse projeto não é afiliado de qualquer forma à Yahoo ou TradingView or qualquer outra empresa mencionada aqui ou no site [brapi.ga](brapi.ga).
+This project is not affiliated in any way with Yahoo or TradingView or any other company mentioned here or on the website [brapi.ga](brapi.ga).
 
-Essa é uma API para fins informativos. Não garantimos a precisão dos dados
-fornecidos pela API ou contidos nesta página, uma vez que devem
-ser utilizados apenas para efeitos informativos. Trabalhamos pela
-estabilidade e precisão dos dados, porém, os dados podem estar
-atrasados ou errados "no estado em que se encontram", confirme
-todos os dados antes de efetuar qualquer ação que possa ser
-afetada por estes valores, assim como demais endpoints da API.
+This is an API for informational purposes. We do not guarantee data accuracy
+provided by the API or contained on this page, as they must
+be used for informational purposes only. We work for
+stability and accuracy of the data, however, the data may be
+delayed or wrong "as is", confirm
+all data before taking any action that may be
+affected by these values, as well as other API endpoints.
 
-## Desenvolvedor
+## Author Info
 
 - Twitter - [@alissonsleal](https://twitter.com/alissonsleal)
 - Discord - [Alisson#0629](https://discord.com/)
 - StackOverflow - [Alisson Leal](https://stackoverflow.com/users/14122260/alisson-leal)
 
-[Subir ao Topo 🚀](#brapi)
+[Go to the top 🚀](#brapi)
 
 <p align="center">
     <img  width="256" src="https://i.imgur.com/pY5brQ8.png">
