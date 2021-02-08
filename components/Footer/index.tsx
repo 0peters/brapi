@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
         <span>
           <h1>convide</h1>
           <p>Compartilhe com seus amigos!</p>
-          <Link href="https://api.whatsapp.com/send?text=Quero%20te%20convidar%20para%20conhecer%20o%20brapi,%20o%20jeito%20mais%20f%C3%A1cil%20de%20acessar%20uma%20API%20da%20bolsa%20de%20valores!%20Clique%20no%20link%20para%20ter%20acesso%20gratuitamente%20https://www.bovespa-api.vercel.app/">
+          <Link href="https://api.whatsapp.com/send?text=Quero%20te%20convidar%20para%20conhecer%20o%20brapi,%20o%20jeito%20mais%20f%C3%A1cil%20de%20acessar%20uma%20API%20da%20bolsa%20de%20valores!%20Clique%20no%20link%20para%20ter%20acesso%20gratuitamente%20https://www.brapi.ga/">
             <a className="wpp-button" rel="noreferrer noopener" target="_blank">
               <ImWhatsapp size={20} />
               Compartilhe agora
