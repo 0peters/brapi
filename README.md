@@ -1,5 +1,5 @@
 <p align="center">
-    <img  max-width="768" src="https://i.imgur.com/pY5brQ8.png">
+    <img  width="256" src="https://i.imgur.com/pY5brQ8.png">
   </p>
 
 <p align="center">
@@ -14,7 +14,7 @@
 
 Na brapi, você tem acesso à cotação em tempo real das ações da Ibovespa com um delay de 15 minutos. Você tem acesso à uma API que mostra todos os dados necessarios para você desenvolver a sua própria aplicação relacionada ao mercado de ações brasileiro.
 
-Funciona com Ações comuns com final 3 e 4. Também funciona com Fundos com final 11.
+Funciona com Ações comuns com final 3 e 4. Também funciona com Fundos de Investimento com final 11.
 
 Saiba mais: [https://brapi.ga](https://brapi.ga)
 
@@ -45,7 +45,7 @@ Nossa API não tem limites por enquanto, use a vontade.
 Desenvolvemos a API mais fácil de começar a utilizar, sem cadastros, sem cartão de crédito e sem qualquer tipo de autenticação.
 
 ```json
-// GET http://localhost:3000/api/quote/COGN3
+// GET http://brapi.ga/api/quote/COGN3
 {
   "results": {
     "symbol": "COGN3",
@@ -117,5 +117,5 @@ afetada por estes valores, assim como demais endpoints da API.
 [Subir ao Topo 🚀](#brapi)
 
 <p align="center">
-    <img  max-width="768" src="https://i.imgur.com/pY5brQ8.png">
+    <img  width="256" src="https://i.imgur.com/pY5brQ8.png">
   </p>
