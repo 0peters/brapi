@@ -45,7 +45,7 @@ Our API has no limits for now, use at your will.
 We developed the easiest API to start using, no registration, no credit card and without any type of authentication.
 
 ```json
-// GET http://brapi.ga/api/quote/COGN3
+// GET https://brapi.ga/api/quote/COGN3
 {
   "results": {
     "symbol": "COGN3",
