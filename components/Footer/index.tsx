@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
             <a>docs</a>
           </Link>
           <Link href="/quotes">
-            <a>contação</a>
+            <a>cotação</a>
           </Link>
           <Link href="/contact">
             <a>contato</a>
@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
         <span>
           <h2>contato</h2>
           <p>brapi@protonmail.com</p>
-          <Link href="http://github.com/alissonsleal/brapi">
+          <Link href="http://github.com/alissonsleal/brapi/issues">
             <a target="_blank" rel="noopener noreferrer">
               Github
             </a>
