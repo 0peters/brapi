@@ -1,6 +1,6 @@
 import { InferGetStaticPropsType } from 'next';
 import Link from 'next/link';
-import React from 'react';
+import Image from 'next/image';
 import {
   numberToSI,
   numberToMoney,
@@ -39,6 +39,12 @@ const MainQuote = ({
               pedidos sendo preenchidos em certos níveis de preços quando os
               grandes players entram no mercado.
             </p>
+            <h2>
+              Títulos/Símbolos disponíveis:
+              <Link href="/docs/list">
+                <a className="every-stock">veja a lista</a>
+              </Link>
+            </h2>
           </aside>
         </section>
         <section>
@@ -47,12 +53,14 @@ const MainQuote = ({
               <Link href={`/quotes/${stock.name}`} key={stock.name}>
                 <a aria-label={`Ação ${stock.name}`}>
                   <aside className="card">
-                    <img
+                    <Image
                       src={
                         stock.logoid
                           ? `https://s3-symbol-logo.tradingview.com/${stock.logoid}.svg`
                           : brapiLogo
                       }
+                      width="64"
+                      height="64"
                       alt={stock.name}
                       title={stock.name}
                     />

@@ -65,11 +65,7 @@ export const Container = styled.div`
               padding: 1rem;
               border-radius: 1rem;
               cursor: pointer;
-              box-shadow: 3px 3px 3px #ddd;
-
-              @media (prefers-color-scheme: dark) {
-                box-shadow: 3px 3px 3px #111;
-              }
+              box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
             }
 
             ul {

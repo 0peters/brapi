@@ -204,7 +204,7 @@ const Quotes = ({
                 <strong>
                   Méd. Variação Preço <i>(200 dias)</i>
                 </strong>
-                <p>{numberToPercent(stock.twoHundredDayAverageChange)}</p>
+                <p>{numberToMoney(stock.twoHundredDayAverageChange)}</p>
               </span>
               <span>
                 <strong>

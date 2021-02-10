@@ -15,11 +15,7 @@ export const Container = styled.div<MenuProps>`
   color: var(--text);
   background-color: var(--background-light);
   font-weight: 600;
-  box-shadow: 0 3px 5px #dddddd;
-
-  @media (prefers-color-scheme: dark) {
-    box-shadow: 0 3px 5px #111;
-  }
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 
   nav {
     display: flex;

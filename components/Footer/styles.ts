@@ -64,11 +64,7 @@ export const Container = styled.footer`
         :hover {
           color: var(--main-dark);
           transform: translate3d(-3px, -4px, 0px);
-          box-shadow: 3px 4px 6px #ddd;
-
-          @media (prefers-color-scheme: dark) {
-            box-shadow: 3px 4px 6px #111;
-          }
+          box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.1);
         }
       }
     }
