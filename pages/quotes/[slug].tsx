@@ -14,7 +14,7 @@ import { QuoteProps } from '../../@types/QuoteProps';
 import Header from '../../components/Header';
 import Layout from '../../Layout';
 
-import { Container } from './styles';
+import { Container } from '../../styles/quotesStylesSlug';
 
 export const getServerSidePaths = async () => {
   const response = await axios.post(
