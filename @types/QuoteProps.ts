@@ -1,14 +1,15 @@
 export interface QuoteProps {
   currency: string;
-  fiftyDayAverage: number;
-  fiftyDayAverageChange: number;
-  fiftyDayAverageChangePercent: number;
+  fiftyDayAverage?: number;
+  fiftyDayAverageChange?: number;
+  fiftyDayAverageChangePercent?: number;
   twoHundredDayAverage: number;
   twoHundredDayAverageChange: number;
   twoHundredDayAverageChangePercent: number;
-  marketCap: number;
+  marketCap: number | null;
   shortName: string;
   longName: string;
+  stockImg?: string;
   regularMarketChange: number;
   regularMarketChangePercent: number;
   regularMarketTime: number;
