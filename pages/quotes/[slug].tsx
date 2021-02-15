@@ -216,10 +216,12 @@ const Quotes = ({
               </span>
             </section>
             <i className="bottom-right">
-              Atualizado às:{' '}
-              {new Date(stock.regularMarketTime * 1000)
-                .toLocaleTimeString()
-                .toString()}
+              {`Atualizado às ${new Date(stock.regularMarketTime * 1000)
+                .toLocaleString('pt-br')
+                .toString()
+                .split(' ')
+                .reverse()
+                .join(' do dia ')}`}
             </i>
           </main>
         </Container>
