@@ -41,8 +41,32 @@ const MainDocs = () => {
               <p>
                 Os dados são obtidos a partir do símbolo da empresa como é
                 possível ver abaixo:
-                <br />
-                <code>GET https://brapi.ga/api/quote/COGN3</code>
+              </p>
+
+              <p>
+                <strong>Exemplo de uma Requisição: </strong>
+                <a
+                  href="/api/quote/COGN3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <code className="code-get">
+                    GET https://brapi.ga/api/quote/COGN3
+                  </code>
+                </a>
+              </p>
+
+              <p>
+                <strong>Exemplo de uma Requisição em Grupo : </strong>
+                <a
+                  href="/api/quote/COGN3,MGLU3,VVAR3,OIBR3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <code className="code-get">
+                    GET https://brapi.ga/api/quote/COGN3,MGLU3,VVAR3,OIBR3
+                  </code>
+                </a>
               </p>
             </div>
 

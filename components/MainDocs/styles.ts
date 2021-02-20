@@ -54,6 +54,18 @@ export const Container = styled.div`
             :active {
               color: var(--text);
             }
+
+            @media (prefers-color-scheme: dark) {
+              color: var(--main);
+
+              :hover {
+                color: var(--main-dark);
+              }
+
+              :active {
+                color: var(--main-dark);
+              }
+            }
           }
 
           details {
@@ -101,6 +113,19 @@ export const Container = styled.div`
           code {
             background-color: var(--background-light);
             padding: 0.1rem;
+          }
+        }
+
+        .code-get {
+          background-color: var(--main-dark);
+          color: #fafafa;
+
+          padding: 0.2rem;
+          border-radius: 0.3rem;
+
+          :hover,
+          :active {
+            background-color: var(--main);
           }
         }
       }
