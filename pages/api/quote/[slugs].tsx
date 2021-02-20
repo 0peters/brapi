@@ -62,7 +62,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
             });
           }
         } catch (err) {
-          console.log(err);
+          // console.log(err);
           res.status(404).send({
             error: `Não encontramos a ação ${slug.toString().toUpperCase()}`,
           });
