@@ -56,10 +56,12 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
           const dynamicDate = new Date();
           if (i + 1 === allSlugs.length) {
-            res.status(200).json({
-              results: responseArray,
-              requestedAt: dynamicDate,
-            });
+            setTimeout(() => {
+              res.status(200).json({
+                results: responseArray,
+                requestedAt: dynamicDate,
+              });
+            }, i * 5);
           }
         } catch (err) {
           // console.log(err);
