@@ -61,7 +61,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
                 results: responseArray,
                 requestedAt: dynamicDate,
               });
-            }, i * 10);
+            }, i * 5);
           }
         } catch (err) {
           // console.log(err);
