@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { FiMenu } from 'react-icons/fi';
+import { useAuth } from '../../context/SignUp';
 
 import Logomark from '../Logomark';
 
 import { Container } from './styles';
 
 const Header: React.FC = () => {
+  const auth = useAuth();
+
   const [open, setOpen] = useState(false);
 
   return (
@@ -91,18 +94,30 @@ const Header: React.FC = () => {
         </ul>
       </nav>
 
-      <ul className="ul-right">
-        <li>
-          <Link href="/login">
-            <a>entrar</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/create-account">
-            <a className="rounded-border">criar conta</a>
-          </Link>
-        </li>
-      </ul>
+      {auth?.currentUser ? (
+        <Link href="/login">
+          <a>
+            <img
+              className="profile-picture"
+              src={auth?.currentUser?.photoURL}
+              alt="Foto de perfil do usuário"
+            />
+          </a>
+        </Link>
+      ) : (
+        <ul className="ul-right">
+          <li>
+            <Link href="/login">
+              <a>entrar</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/create-account">
+              <a className="rounded-border">criar conta</a>
+            </Link>
+          </li>
+        </ul>
+      )}
     </Container>
   );
 };

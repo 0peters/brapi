@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
-import ComingSoon from '../../components/ComingSoon';
 import Header from '../../components/Header';
+import SignUp from '../../components/SignUp';
 import Layout from '../../Layout';
 
 const login: React.FC = () => {
@@ -12,7 +12,7 @@ const login: React.FC = () => {
       </Head>
       <Layout>
         <Header />
-        <ComingSoon />
+        <SignUp />
       </Layout>
     </div>
   );

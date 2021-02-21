@@ -3,22 +3,25 @@ import { Container } from './styles';
 import { FiGithub } from 'react-icons/fi';
 import Link from 'next/link';
 
-const SignUp: React.FC = () => {
+const SignUp = ({ create = false }: any) => {
   const auth = useAuth();
+  console.log(create);
 
   return (
     <Container>
       <main>
         {!auth?.currentUser ? (
           <>
-            <h1>Login</h1>
+            <h1>{create ? `Criar um Conta` : `Entrar`}</h1>
             <p>
-              Entre com sua conta do GitHub para acessar seu painel da brapi
+              {create
+                ? `Crie sua conta a partir do seu GitHub para acessar o seu painel da brapi`
+                : `Entre com sua conta do GitHub para acessar seu painel da brapi`}
             </p>
           </>
         ) : (
           <>
-            <h1>Bem Vindo à brapi</h1>
+            <h1>Bem vindo à brapi</h1>
             <p>Acesse a sua dashboard abaixo:</p>
             <Link href="/quotes">
               <a>
@@ -31,7 +34,7 @@ const SignUp: React.FC = () => {
         {!auth?.currentUser && (
           <button onClick={() => auth.signinWithGithub()}>
             <FiGithub size={'1rem'} color="#fafafa" />
-            Entrar com Github
+            {create ? `Criar conta com Github` : `Entrar com Github`}
           </button>
         )}
 

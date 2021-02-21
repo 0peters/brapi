@@ -15,7 +15,7 @@ export const Container = styled.div`
   main {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: var(--background-light);
     min-height: 50%;
     width: 100%;
     max-width: 35rem;
@@ -24,6 +24,7 @@ export const Container = styled.div`
     margin: 1rem;
     border-radius: 1rem;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    color: #fafafa;
 
     .button-leave {
       background-color: #f22;

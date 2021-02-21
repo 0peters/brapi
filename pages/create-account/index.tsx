@@ -13,7 +13,7 @@ const CreateAccount: React.FC = () => {
       </Head>
       <Layout>
         <Header />
-        <SignUp />
+        <SignUp create />
       </Layout>
     </div>
   );

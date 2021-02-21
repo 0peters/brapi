@@ -27,6 +27,22 @@ export const Container = styled.div<MenuProps>`
     }
   }
 
+  img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 2px solid var(--main);
+    margin-right: 1rem;
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
   ul {
     padding: 0;
     margin: 0;
