@@ -24,7 +24,29 @@ export const Container = styled.div`
     margin: 1rem;
     border-radius: 1rem;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-    color: #fafafa;
+    color: var(--text);
+
+    @media (prefers-color-scheme: dark) {
+      color: #fafafa;
+    }
+
+    p {
+      a {
+        display: block;
+        margin-top: 1rem;
+        font-weight: bold;
+        color: var(--main-dark);
+        transition: color 0.2s ease;
+
+        @media (prefers-color-scheme: dark) {
+          color: var(--main-light);
+        }
+
+        &:hover {
+          color: var(--main);
+        }
+      }
+    }
 
     .button-leave {
       background-color: #f22;

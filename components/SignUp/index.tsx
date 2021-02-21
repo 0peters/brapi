@@ -14,10 +14,23 @@ const SignUp = ({ create = false }: any) => {
           <>
             <h1>{create ? `Criar um Conta` : `Entrar`}</h1>
             <p>
+              Você não precisa ter uma conta para utilizar a nossa API, estamos
+              em fase de testes e estamos testando um sistema de login aqui :)
+              <br />
+              <Link href="/docs">
+                <a className="docs-link" rel="noopener noreferrer">
+                  Documentação
+                </a>
+              </Link>
+            </p>
+
+            {/* ADD THIS WHEN WE GET A DASHBOARD PAGE
+            
+            <p>
               {create
                 ? `Crie sua conta a partir do seu GitHub para acessar o seu painel da brapi`
                 : `Entre com sua conta do GitHub para acessar seu painel da brapi`}
-            </p>
+            </p> */}
           </>
         ) : (
           <>
