@@ -3,6 +3,7 @@ import React from 'react';
 import ComingSoon from '../../components/ComingSoon';
 import Header from '../../components/Header';
 import Layout from '../../Layout';
+import SignUp from '../../components/SignUp';
 
 const CreateAccount: React.FC = () => {
   return (
@@ -12,7 +13,8 @@ const CreateAccount: React.FC = () => {
       </Head>
       <Layout>
         <Header />
-        <ComingSoon />
+        <SignUp />
+        {/* <ComingSoon /> */}
       </Layout>
     </div>
   );
