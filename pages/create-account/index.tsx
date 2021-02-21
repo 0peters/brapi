@@ -14,7 +14,6 @@ const CreateAccount: React.FC = () => {
       <Layout>
         <Header />
         <SignUp />
-        {/* <ComingSoon /> */}
       </Layout>
     </div>
   );
