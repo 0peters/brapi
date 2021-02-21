@@ -34,6 +34,18 @@ export const Container = styled.div`
           color: var(--text);
         }
 
+        h2 {
+          color: var(--text);
+
+          a {
+            color: var(--main-dark) !important;
+
+            &:hover {
+              color: var(--main) !important;
+            }
+          }
+        }
+
         p {
           color: var(--text);
         }
