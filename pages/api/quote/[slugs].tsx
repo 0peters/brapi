@@ -8,9 +8,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
   if (slugs) {
     const responseAllSlugs = async () => {
-      let responseArray: any = [];
-
-      allSlugs.map(async (slug, i) => {
+      const promises = allSlugs.map(async (slug) => {
         try {
           const response = await axios.get(
             `https://query1.finance.yahoo.com/v7/finance/options/${slug}.SA`,
@@ -51,36 +49,25 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
           };
 
           if (response.status === 200) {
-            responseArray.push(quote);
-          }
-
-          const dynamicDate = new Date();
-          if (i + 1 === allSlugs.length) {
-            setTimeout(() => {
-              res.status(200).json({
-                results: responseArray,
-                requestedAt: dynamicDate,
-              });
-            }, i * 5);
+            return quote;
           }
         } catch (err) {
-          // console.log(err);
           res.status(404).send({
             error: `Não encontramos a ação ${slug.toString().toUpperCase()}`,
           });
         }
       });
 
-      return responseArray;
+      const dynamicDate = new Date();
+      const actualData = await Promise.all(promises);
+      res.status(200).json({
+        results: actualData,
+        requestedAt: dynamicDate,
+      });
+
+      return actualData;
     };
 
     await responseAllSlugs();
   }
-};
-
-// Next was returning a false positive { API resolved without sending a response... }
-export const config = {
-  api: {
-    externalResolver: true,
-  },
 };
