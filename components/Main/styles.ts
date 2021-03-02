@@ -37,27 +37,50 @@ export const Container = styled.div`
           max-width: 18rem;
         }
 
-        a {
-          color: var(--text);
-          border: 1px solid #999999;
-          border-radius: 0.75rem;
-          padding: 0.5rem 1.25rem;
-          text-align: center;
-          font-family: 'Open Sans', sans-serif;
-          font-size: 16px;
-          font-weight: 600;
-          cursor: pointer;
+        div {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          a {
+            color: var(--text);
+            border: 1px solid #999999;
+            border-radius: 0.75rem;
+            padding: 0.5rem 1.25rem;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
 
-          transition: all 0.1s ease;
+            transition: all 0.1s ease;
 
-          :hover {
-            border-color: var(--main);
-            color: var(--main);
+            :hover {
+              border-color: var(--main);
+              color: var(--main);
+            }
+
+            :active {
+              border-color: var(--main-dark);
+              color: var(--main-dark);
+            }
           }
 
-          :active {
-            border-color: var(--main-dark);
-            color: var(--main-dark);
+          .button-action {
+            background-color: var(--main);
+            color: #fafafa;
+            border-color: var(--main);
+
+            :hover {
+              border-color: var(--main-dark);
+              background-color: var(--main-dark);
+              color: #fafafa;
+            }
+
+            :active {
+              border-color: var(--main-dark);
+              background-color: var(--main);
+              color: #fafafa;
+            }
           }
         }
       }
