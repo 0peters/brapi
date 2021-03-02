@@ -17,11 +17,16 @@ const Main: React.FC = () => {
             <h1>API de Ações</h1>
             <p>
               Tenha acesso instantâneo aos valores da cotação da bolsa de
-              valores
+              valores e dados históricos
             </p>
-            <Link href="/about">
-              <a>Saiba mais</a>
-            </Link>
+            <div>
+              <Link href="/about">
+                <a>Saiba mais</a>
+              </Link>
+              <Link href="/docs">
+                <a className="button-action">Docs</a>
+              </Link>
+            </div>
           </aside>
           <img src={mainProgrammer} alt="Pessoa olhando um gráfico de ações" />
         </section>
