@@ -44,7 +44,7 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#52B788" />
           <meta name="og:title" content="brapi" />
           <meta name="og:type" content="website" />
-          <meta name="og:image" content="https://brapi.ga/favicon.svg" />
+          <meta name="og:image" content="https://brapi.ga/favicon.ico" />
           <meta
             name="og:description"
             lang="pt-BR"
