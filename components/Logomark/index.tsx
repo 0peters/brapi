@@ -18,7 +18,7 @@ const Logomark: React.FC = () => {
         height="320"
         viewBox="0 0 661 320"
         fill="none"
-        xmlns="http://www.w3.org/2000/svg"
+        xmlns="https://www.w3.org/2000/svg"
       >
         <path
           d="M12 181.695V308.967H148.589C225.507 308.967 269.517 235.419 269.517 188.039V12H214.405L177.136 54.0273C55.8116 54.0273 12 121.231 12 181.695Z"

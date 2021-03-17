@@ -3,7 +3,7 @@ import { NextApiRequest, NextApiResponse } from 'next';
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   res.status(200).setHeader('Content-Type', 'application/xml');
   res.send(`<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
       <loc>https://brapi.ga/</loc>
       <lastmod>2021-02-06</lastmod>
