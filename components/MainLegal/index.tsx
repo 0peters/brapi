@@ -1,7 +1,5 @@
 import { Container } from './styles';
 
-import WorkTogetherImg from '../../assets/work-together.svg';
-
 const MainLegal = () => {
   return (
     <Container>
