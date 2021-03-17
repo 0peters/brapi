@@ -29,13 +29,10 @@ export const getServerSidePaths = async () => {
         .replace('11F', '11')
         .replace('6F', '6')
         .replace('BMFBOVESPA:', '');
-      // console.log(workingStock);
 
       return { params: { slug: workingStock } };
     })
     .sort();
-
-  // console.log(paths);
 
   return {
     paths,

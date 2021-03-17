@@ -5,7 +5,6 @@ import Link from 'next/link';
 
 const SignUp = ({ create = false }: any) => {
   const auth = useAuth();
-  console.log(create);
 
   return (
     <Container>

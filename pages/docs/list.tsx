@@ -50,16 +50,12 @@ export const getStaticProps = async () => {
       ? `https://s3-symbol-logo.tradingview.com/${stock.d[0]}.svg`
       : `${logoBrapi}`;
 
-    // console.log(stock);
-
     return {
       slug: workingStock,
       img: stockImg,
       price: stock.d[2],
     };
   });
-
-  // console.log(paths);
 
   return {
     props: {
@@ -99,7 +95,6 @@ const Docs = ({ stocks }: InferGetStaticPropsType<typeof getStaticProps>) => {
             </article>
           </main>
         </Container>
-        {/* {console.log(stocks)} */}
       </Layout>
     </div>
   );
