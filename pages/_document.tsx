@@ -42,11 +42,18 @@ class MyDocument extends Document {
             content="API, Desenvolvimento, Bovespa, Ibovespa, Negócios, Informações financeiras, Investimento, Investidor, Notícias de mercado, Pesquisa de ações, Avaliação de ações, notícias de negócios, economia, finanças, ferramentas de investimento, hipotecas, fundos mútuos, finanças pessoais, cotação, imóveis, aposentadoria, ações, ações, impostos , monitorar portfólio"
           />
           <meta name="theme-color" content="#52B788" />
+          <meta property="og:title" content="brapi" />
+          <meta property="og:type" content="website" />
+          <meta property="og:image" content="https://brapi.ga/favicon.png" />
+          <meta property="og:image:width" content="512" />
+          <meta property="og:image:height" content="512" />
           <meta
-            name="description"
-            lang="en-US"
+            property="og:description"
+            lang="pt-BR"
             content="API ilimitada da IBOVESPA. Ajudamos desenvolvedores a construir o futuro das fintechs democratizando o acesso aos dados do mercado financeiro brasileiro."
           />
+          <meta property="og:url" content="https://brapi.ga" />
+          <meta property="og:locale" content="pt-BR" />
           <link rel="manifest" href="/manifest.json" />
           <meta
             name="google-site-verification"
