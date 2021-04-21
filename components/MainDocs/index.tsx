@@ -99,6 +99,20 @@ const MainDocs = () => {
                   </code>
                 </a>
               </p>
+              <p>
+                <strong>
+                  Exemplo de uma Requisição para pesquisar ações:{' '}
+                </strong>
+                <a
+                  href="/api/available?search=CO"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <code className="code-get">
+                    GET https://brapi.ga/api/available?search=CO
+                  </code>
+                </a>
+              </p>
             </div>
 
             <p>
@@ -1323,6 +1337,56 @@ const MainDocs = () => {
 ],
 "requestedAt": "2021-03-02T20:14:43.686Z"
 }`}
+                  </code>
+                </pre>
+              </details>
+            </p>
+
+            <p>
+              <details>
+                <summary>
+                  <strong>Pesquisar se a ação existe: </strong>
+                </summary>
+                <pre>
+                  <code>
+                    {`
+// GET https://brapi.ga/api/available?search=CO
+// Se não for passado "?search=", é retornado todas as ações disponíveis
+
+{
+  "stocks": [
+    "COGN3",
+    "NTCO3",
+    "ECOR3",
+    "TFCO4",
+    "COCA34",
+    "GMCO34",
+    "PGCO34",
+    "BRCO11",
+    "QCOM34",
+    "WFCO34",
+    "COPH34",
+    "COCE5",
+    "COWC34",
+    "CXCO11",
+    "CSCO34",
+    "JDCO34",
+    "RBCO11",
+    "COTY34",
+    "COCE5F",
+    "ECOO11",
+    "COLG34",
+    "TMCO34",
+    "DGCO34",
+    "COCE3",
+    "MCOR34",
+    "E1CO34",
+    "VFCO34",
+    "CORR4",
+    "ECOO"
+  ]
+}
+`}
                   </code>
                 </pre>
               </details>
