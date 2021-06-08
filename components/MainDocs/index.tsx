@@ -1395,6 +1395,70 @@ const MainDocs = () => {
             <p>
               <details>
                 <summary>
+                  <strong>Listar todas as ações: </strong>
+                </summary>
+                <p>
+                  <strong>Valores aceitos para "sortBy", "sortOrder": </strong>
+                  "name", "close", "change", "change_abs", "volume",
+                  "market_cap_basic". limit deve ser um número
+                </p>
+
+                <pre>
+                  <code>
+                    {`
+// GET https://brapi.ga/api/quote/list?sortBy=volume&sortOrder=desc&limit=5
+// Se não for passado "?sortBy=", é ordenado pelo volume do dia
+// Se não for passado "?sortOrder=", é ordenado do maior para o menor
+// Se não for passado "?limit=", é retornado todas as ações
+
+{
+  "stocks": [
+    {
+      "stock": "B3SA3",
+      "close": 16.33,
+      "change": -5.55234786,
+      "volume": 88534700,
+      "market_cap": 105727114568
+    },
+    {
+      "stock": "OIBR3",
+      "close": 1.56,
+      "change": -4.29447853,
+      "volume": 78590800,
+      "market_cap": 9809933983
+    },
+    {
+      "stock": "VVAR3",
+      "close": 15.29,
+      "change": 4.36860068,
+      "volume": 59887700,
+      "market_cap": 23396841621
+    },
+    {
+      "stock": "PETR3",
+      "close": 29.41,
+      "change": 2.40251053,
+      "volume": 51187500,
+      "market_cap": 372220624506
+    },
+    {
+      "stock": "DMMO3",
+      "close": 0.98,
+      "change": -10.90909091,
+      "volume": 47691300,
+      "market_cap": 341102360
+    }
+  ]
+}
+`}
+                  </code>
+                </pre>
+              </details>
+            </p>
+
+            <p>
+              <details>
+                <summary>
                   <strong>Interface para Typescript: </strong>
                 </summary>
                 <pre>
