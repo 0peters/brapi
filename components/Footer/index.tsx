@@ -25,6 +25,11 @@ const Footer: React.FC = () => {
           <Link href="/legal">
             <a>legal</a>
           </Link>
+          <Link href="https://status.brapi.ga/">
+            <a target="_blank" rel="noopener noreferrer">
+              status
+            </a>
+          </Link>
         </span>
 
         <span>
