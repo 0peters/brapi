@@ -58,7 +58,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       active_symbols_only: true,
     },
     symbols: {},
-    columns: ['close', 'change', 'volume', 'market_cap_basic'],
+    columns: ['close', 'change', 'volume', 'market_cap_basic', 'description'],
     sort: {
       sortBy: sortBy?.toString() || 'volume',
       sortOrder: sortOrder?.toString() || 'desc',
@@ -73,6 +73,17 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   );
 
   const paths = await response.data.data.map((stock: any) => {
+    const cleanString = (dirtyString: string) => {
+      return dirtyString
+        .replace(' ON', '')
+        .replace(' ON', '')
+        .replace(' NM', '')
+        .replace(' EJ', '')
+        .replace(' REON', '')
+        .replace(' N1', '')
+        .replace(' N2', '');
+    };
+
     const availableStock = stock.s
       .replace('3F', '3')
       .replace('4F', '4')
@@ -80,8 +91,11 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       .replace('6F', '6')
       .replace('BMFBOVESPA:', '');
 
+    const cleanName = cleanString(stock.d[4]);
+
     const stockInformation = {
       stock: availableStock,
+      name: cleanName,
       close: stock.d[0],
       change: stock.d[1],
       volume: stock.d[2],
