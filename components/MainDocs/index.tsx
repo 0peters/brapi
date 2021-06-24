@@ -71,6 +71,21 @@ const MainDocs = () => {
 
               <p>
                 <strong>
+                  Exemplo de uma Requisição com dados fundamentalistas:{' '}
+                </strong>
+                <a
+                  href="/api/quote/COGN3?fundamental=true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <code className="code-get">
+                    GET https://brapi.ga/api/quote/COGN3?fundamental=true
+                  </code>
+                </a>
+              </p>
+
+              <p>
+                <strong>
                   Exemplo de uma Requisição com dados históricos:{' '}
                 </strong>
                 <a

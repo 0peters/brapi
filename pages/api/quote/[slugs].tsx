@@ -2,10 +2,15 @@ import axios from 'axios';
 import { NextApiRequest, NextApiResponse } from 'next';
 import { QuoteProps } from '../../../@types/QuoteProps';
 
+interface LooseObject {
+  [key: string]: any;
+}
+
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   const { slugs } = req.query;
   const { interval } = req.query;
   const { range } = req.query;
+  const { fundamental } = req.query;
 
   const validRanges = [
     '1d',
@@ -30,6 +35,32 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
           const response = await axios.get(
             `https://query1.finance.yahoo.com/v7/finance/options/${slug}.SA`,
           );
+
+          let fundamentalInformation = [];
+
+          if (fundamental) {
+            const formDataTradingView = {
+              symbols: {
+                tickers: [`BMFBOVESPA:${slug.toUpperCase()}`],
+                query: {
+                  types: [],
+                },
+              },
+              columns: ['price_earnings_ttm', 'earnings_per_share_basic_ttm'],
+            };
+
+            const responseTradingView = await axios.post(
+              `https://scanner.tradingview.com/brazil/scan`,
+              formDataTradingView,
+              {
+                headers: {
+                  'Content-Type': 'application/x-www-form-urlencoded',
+                },
+              },
+            );
+
+            fundamentalInformation.push(responseTradingView.data.data[0].d);
+          }
 
           const getHistory = async () => {
             const historicalResponse = await axios.get(
@@ -66,7 +97,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
           if (interval && range) {
             const historicalData = await getHistory();
-            const historicalQuote = {
+            const historicalQuote: LooseObject = {
               symbol: slug.toString().toUpperCase(),
               shortName: data.shortName,
               longName: data.longName,
@@ -104,7 +135,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
             }
           }
 
-          const quote = {
+          const quote: LooseObject = {
             symbol: slug.toString().toUpperCase(),
             shortName: data.shortName,
             longName: data.longName,
@@ -134,6 +165,11 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
             twoHundredDayAverageChangePercent:
               data.twoHundredDayAverageChangePercent,
           };
+
+          if (fundamental) {
+            quote.priceEarnings = fundamentalInformation[0][0];
+            quote.earningsPerShare = fundamentalInformation[0][1];
+          }
 
           if (response.status === 200) {
             return quote;
