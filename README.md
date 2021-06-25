@@ -27,6 +27,7 @@ Saiba mais: [https://brapi.ga](https://brapi.ga)
 Documentação: [https://brapi.ga/docs](https://brapi.ga/docs)
 
 Collection do Postman: [https://app.getpostman.com/run-collection/da5f72c67bf46c6c4a5f](https://app.getpostman.com/run-collection/da5f72c67bf46c6c4a5f)
+SwaggerAPI: [https://app.swaggerhub.com/apis-docs/Alissonsleal/brapi/1.0.0#/](https://app.swaggerhub.com/apis-docs/Alissonsleal/brapi/1.0.0#/)
 
 ## Recursos
 

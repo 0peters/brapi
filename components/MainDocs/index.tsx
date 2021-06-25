@@ -28,6 +28,10 @@ const MainDocs = () => {
                 possível verificar o horário que foi atualizado através do dado
                 no <code>regularMarketTime</code>.
               </p>
+
+              <br />
+              <br />
+
               <p>
                 A forma mais fácil de entender essa API é através da nossa
                 Collection no Postman que pode ser acessada aqui:{' '}
@@ -39,6 +43,21 @@ const MainDocs = () => {
                   https://www.getpostman.com/collections/da5f72c67bf46c6c4a5f
                 </a>
               </p>
+
+              <p>
+                Também temos o swagger com OpenAPI 3.0:{' '}
+                <a
+                  href="https://app.swaggerhub.com/apis-docs/Alissonsleal/brapi/1.0.0#/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://app.swaggerhub.com/apis-docs/Alissonsleal/brapi/1.0.0#/
+                </a>
+              </p>
+
+              <br />
+              <br />
+
               <p>
                 <strong>
                   Títulos/Símbolos disponíveis:{' '}
