@@ -130,6 +130,11 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
               historicalDataPrice: historicalData,
             };
 
+            if (fundamental) {
+              historicalQuote.priceEarnings = fundamentalInformation[0][0];
+              historicalQuote.earningsPerShare = fundamentalInformation[0][1];
+            }
+
             if (response.status === 200) {
               return historicalQuote;
             }

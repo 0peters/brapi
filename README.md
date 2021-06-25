@@ -10,6 +10,12 @@
     <a href="https://github.com/Alissonsleal/"><img alt="Alisson Leal GitHub Profile" src="https://img.shields.io/badge/made%20by-Alisson%20Leal-sucess?style=flat-square&logo=appveyor"></a>
 </p>
 
+<p align="center">
+<a href="https://app.getpostman.com/run-collection/da5f72c67bf46c6c4a5f">
+<img  width="96" src="https://run.pstmn.io/button.svg"></a>
+
+</p>
+
 # brapi
 
 Na brapi, você tem acesso à cotação em tempo real das ações da Ibovespa com um delay de 15 minutos. Você tem acesso à uma API que mostra todos os dados necessarios para você desenvolver a sua própria aplicação relacionada ao mercado de ações brasileiro. Ajudamos desenvolvedores a construir o futuro das fintechs democratizando o acesso aos dados do mercado financeiro brasileiro.
@@ -19,6 +25,8 @@ Funciona com Ações comuns com final 3 e 4. Também funciona com Fundos de Inve
 Saiba mais: [https://brapi.ga](https://brapi.ga)
 
 Documentação: [https://brapi.ga/docs](https://brapi.ga/docs)
+
+Collection do Postman: [https://app.getpostman.com/run-collection/da5f72c67bf46c6c4a5f](https://app.getpostman.com/run-collection/da5f72c67bf46c6c4a5f)
 
 ## Recursos
 

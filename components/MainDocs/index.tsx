@@ -29,6 +29,17 @@ const MainDocs = () => {
                 no <code>regularMarketTime</code>.
               </p>
               <p>
+                A forma mais fácil de entender essa API é através da nossa
+                Collection no Postman que pode ser acessada aqui:{' '}
+                <a
+                  href="https://www.getpostman.com/collections/da5f72c67bf46c6c4a5f"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://www.getpostman.com/collections/da5f72c67bf46c6c4a5f
+                </a>
+              </p>
+              <p>
                 <strong>
                   Títulos/Símbolos disponíveis:{' '}
                   <Link href="/docs/list">
