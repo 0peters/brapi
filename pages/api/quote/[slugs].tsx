@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { logHost } from '../../../utils/logHost';
 import { NextApiRequest, NextApiResponse } from 'next';
 import { QuoteProps } from '../../../@types/QuoteProps';
 
@@ -29,6 +30,8 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   const allSlugs = slugs.toString().split(',');
 
   if (slugs) {
+    res.setHeader('Cache-Control', 's-maxage=900, stale-while-revalidate');
+
     const responseAllSlugs = async () => {
       const promises = allSlugs.map(async (slug) => {
         try {
@@ -193,10 +196,10 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         results: actualData,
         requestedAt: dynamicDate,
       });
-
-      return actualData;
     };
 
     await responseAllSlugs();
   }
+
+  logHost(req, 'quote');
 };
