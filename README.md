@@ -18,7 +18,7 @@
 
 # brapi
 
-Na brapi, você tem acesso à cotação em tempo real das ações da Ibovespa e criptomoedas com um delay de até 15 minutos. Você tem acesso à uma API que mostra todos os dados necessarios para você desenvolver a sua própria aplicação relacionada ao mercado de ações brasileiro ou cripto. Ajudamos desenvolvedores a construir o futuro das fintechs democratizando o acesso aos dados do mercado financeiro brasileiro e de criptomoedas.
+Na brapi, você tem acesso à cotação em tempo real das ações da Bovespa e criptomoedas com um delay de até 15 minutos. Você tem acesso à uma API que mostra todos os dados necessarios para você desenvolver a sua própria aplicação relacionada ao mercado de ações brasileiro ou cripto. Ajudamos desenvolvedores a construir o futuro das fintechs democratizando o acesso aos dados do mercado financeiro brasileiro e de criptomoedas.
 
 Funciona com Ações comuns com final 3 e 4. Também funciona com Fundos de Investimento com final 11.
 

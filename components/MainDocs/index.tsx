@@ -17,10 +17,10 @@ const MainDocs = () => {
           </aside>
           <aside>
             <div>
-              <h2>Obter o preço de ações listadas no IBOVESPA</h2>
+              <h2>Obter o preço de ações listadas no BOVESPA</h2>
               <p>
                 Com esse endpoint você consegue obter acesso ao preço de uma
-                ação listada no IBOVESPA através do simbolo do título.
+                ação listada no BOVESPA através do simbolo do título.
               </p>
               <p>
                 <strong>Delay: </strong>
