@@ -50,7 +50,7 @@ const Main: React.FC = () => {
             <h1>Cotação em Tempo Real</h1>
             <p>
               Acesse a nossa interface para cotação em tempo real das ações
-              brasileiras
+              brasileiras ou criptomoedas
             </p>
             <Link href="/quotes">
               <a>Cotação</a>

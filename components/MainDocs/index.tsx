@@ -158,6 +158,20 @@ const MainDocs = () => {
                   </code>
                 </a>
               </p>
+              <p>
+                <strong>
+                  Exemplo de uma Requisição para pesquisar criptomoedas:{' '}
+                </strong>
+                <a
+                  href="/api/v2/crypto?coin=BTC,ETH&currency=BRL"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <code className="code-get">
+                    GET https://brapi.ga/api/v2/crypto?coin=BTC,ETH&currency=BRL
+                  </code>
+                </a>
+              </p>
             </div>
 
             <p>
@@ -1617,6 +1631,63 @@ export interface RootObject {
               </details>
             </p>
 
+            <p>
+              <details>
+                <summary>
+                  <strong>Criptomoedas - beta</strong>
+                </summary>
+                <pre>
+                  <code>
+                    {`
+// GET https://brapi.ga/api/v2/crypto?coin=BTC,ETH&currency=BRL
+// Se não for passado "?currency=", é retornado o valor em Real
+// A lista de criptomoedas aceitas é encontrada em: https://finance.yahoo.com/cryptocurrencies (sem o "-USD" é claro)
+// A lista de moedas aceitas em "currency" é encontrada em: https://economia.awesomeapi.com.br/json/available/uniq
+
+// O valor de "currencyRate" retornado é o da conversão USD-CURRENCY atual
+
+{
+  "coins": [
+    {
+      "currency": "BRL",
+      "currencyRateFromUSD": 5.2429,
+      "coinName": "Bitcoin USD",
+      "coin": "BTC",
+      "regularMarketChange": 402.597362674,
+      "regularMarketPrice": 245609.9786803,
+      "regularMarketChangePercent": 0.16418155,
+      "regularMarketDayLow": 239498.84395450001,
+      "regularMarketDayHigh": 248097.83958829998,
+      "regularMarketDayRange": "239498.84395450001 - 248097.83958829998",
+      "regularMarketVolume": 157848853658.8288,
+      "marketCap": 4614316060206.694,
+      "regularMarketTime": 1629062402,
+      "coinImageUrl": "https://s.yimg.com/uc/fin/img/reports-thumbnails/1.png"
+    },
+    {
+      "currency": "BRL",
+      "currencyRateFromUSD": 5.2429,
+      "coinName": "EthereumClassic USD",
+      "coin": "ETC",
+      "regularMarketChange": 47.75498086449999,
+      "regularMarketPrice": 391.8953769354,
+      "regularMarketChangePercent": 13.87659,
+      "regularMarketDayLow": 352.56751371400003,
+      "regularMarketDayHigh": 395.06790815439996,
+      "regularMarketDayRange": "352.56751371400003 - 395.06790815439996",
+      "regularMarketVolume": 33332471762.6368,
+      "marketCap": 50539684997.7344,
+      "regularMarketTime": 1629062404,
+      "coinImageUrl": "https://s.yimg.com/uc/fin/img/reports-thumbnails/1321.png"
+    }
+  ]
+}
+`}
+                  </code>
+                </pre>
+              </details>
+            </p>
+
             <div>
               <h2>Limitações</h2>
               <p>
@@ -1624,8 +1695,14 @@ export interface RootObject {
                 Alpha. Estamos testandos os nossos limites então todas as
                 requisições são ilimitadas, pode ser que vamos ter que limitar o
                 número de requisições no futuro, mas por enquanto está tudo
-                ilimitado. A primeira requisição pode demorar um pouco mais do
-                que normal devido ao <i>cold start</i> da Vercel.
+                ilimitado. Caso queira me pagar um café:{' '}
+                <a
+                  href="https://ko-fi.com/pogulive"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://ko-fi.com/pogulive
+                </a>
               </p>
             </div>
           </aside>
