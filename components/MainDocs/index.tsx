@@ -47,11 +47,11 @@ const MainDocs = () => {
               <p>
                 Também temos o swagger com OpenAPI 3.0:{' '}
                 <a
-                  href="https://app.swaggerhub.com/apis-docs/Alissonsleal/brapi/1.0.0#/"
+                  href="https://app.swaggerhub.com/apis-docs/Alissonsleal/brapi"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  https://app.swaggerhub.com/apis-docs/Alissonsleal/brapi/1.0.0#/
+                  https://app.swaggerhub.com/apis-docs/Alissonsleal/brapi
                 </a>
               </p>
 
