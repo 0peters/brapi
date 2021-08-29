@@ -28,6 +28,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     res.status(404).json({
       message: 'Coin not found',
     });
+    return;
   }
 
   res.status(200).json({
