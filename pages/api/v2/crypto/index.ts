@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import axios from 'axios';
-import { logHost } from '../../../utils/logHost';
+import { logHost } from '../../../../utils/logHost';
 
 interface LooseObject {
   [key: string]: any;

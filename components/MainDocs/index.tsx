@@ -172,6 +172,20 @@ const MainDocs = () => {
                   </code>
                 </a>
               </p>
+              <p>
+                <strong>
+                  Exemplo de uma Requisição para listar criptomoedas:{' '}
+                </strong>
+                <a
+                  href="/api/v2/crypto/available?search=BT"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <code className="code-get">
+                    GET https://brapi.ga/api/v2/crypto/available?search=BT
+                  </code>
+                </a>
+              </p>
             </div>
 
             <p>
@@ -1634,14 +1648,14 @@ export interface RootObject {
             <p>
               <details>
                 <summary>
-                  <strong>Criptomoedas - beta</strong>
+                  <strong>Criptomoedas</strong>
                 </summary>
                 <pre>
                   <code>
                     {`
 // GET https://brapi.ga/api/v2/crypto?coin=BTC,ETH&currency=BRL
 // Se não for passado "?currency=", é retornado o valor em Real
-// A lista de criptomoedas aceitas é encontrada em: https://finance.yahoo.com/cryptocurrencies (sem o "-USD" é claro)
+// A lista de criptomoedas aceitas é encontrada em: https://brapi.ga/api/v2/crypto/available
 // A lista de moedas aceitas em "currency" é encontrada em: https://economia.awesomeapi.com.br/json/available/uniq
 
 // O valor de "currencyRate" retornado é o da conversão USD-CURRENCY atual
@@ -1680,6 +1694,34 @@ export interface RootObject {
       "regularMarketTime": 1629062404,
       "coinImageUrl": "https://s.yimg.com/uc/fin/img/reports-thumbnails/1321.png"
     }
+  ]
+}
+`}
+                  </code>
+                </pre>
+              </details>
+            </p>
+
+            <p>
+              <details>
+                <summary>
+                  <strong>Pesquisar se a criptomoeda existe</strong>
+                </summary>
+                <pre>
+                  <code>
+                    {`
+// GET https://brapi.ga/api/v2/crypto/available?search=BT
+// Se não for passado "?search=", é retornado todas as criptomoedas disponíveis
+
+{
+  "coins": [
+    "BTC",
+    "BTT1",
+    "BTG",
+    "BTS",
+    "BTM",
+    "BTC2",
+    "BTX"
   ]
 }
 `}
