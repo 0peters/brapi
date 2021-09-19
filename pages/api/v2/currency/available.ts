@@ -42,7 +42,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   }
 
   res.status(200).json({
-    coins: sortObject(data),
+    currencies: sortObject(data),
   });
 
   logHost(req, 'v2/crypto/available');
