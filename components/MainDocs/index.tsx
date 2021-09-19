@@ -1656,7 +1656,7 @@ export interface RootObject {
 // GET https://brapi.ga/api/v2/crypto?coin=BTC,ETH&currency=BRL
 // Se não for passado "?currency=", é retornado o valor em Real
 // A lista de criptomoedas aceitas é encontrada em: https://brapi.ga/api/v2/crypto/available
-// A lista de moedas aceitas em "currency" é encontrada em: https://economia.awesomeapi.com.br/json/available/uniq
+// A lista de moedas aceitas em "currency" é encontrada em: https://brapi.ga/api/v2/currency/available
 
 // O valor de "currencyRate" retornado é o da conversão USD-CURRENCY atual
 
@@ -1712,6 +1712,7 @@ export interface RootObject {
                     {`
 // GET https://brapi.ga/api/v2/crypto/available?search=BT
 // Se não for passado "?search=", é retornado todas as criptomoedas disponíveis
+// Esse endpoint funciona muito bem para autocompletar campos de formulários
 
 {
   "coins": [
@@ -1722,6 +1723,89 @@ export interface RootObject {
     "BTM",
     "BTC2",
     "BTX"
+  ]
+}
+`}
+                  </code>
+                </pre>
+              </details>
+            </p>
+
+            <p>
+              <details>
+                <summary>
+                  <strong>Moedas</strong>
+                </summary>
+                <pre>
+                  <code>
+                    {`
+// GET https://brapi.ga/api/v2/currency?currency=USD-BRL,EUR-BRL
+// A lista de moedas aceitas é encontrada em: https://brapi.ga/api/v2/currency/available
+
+{
+  "currency": [
+    {
+      "fromCurrency": "USD",
+      "toCurrency": "BRL",
+      "name": "Dólar Americano/Real Brasileiro",
+      "high": "5.3469",
+      "low": "5.2517",
+      "bidVariation": "0.0355",
+      "percentageChange": "0.68",
+      "bidPrice": "5.2885",
+      "askPrice": "5.2895",
+      "updatedAtTimestamp": "1631912338",
+      "updatedAtDate": "2021-09-17 17:58:58"
+    },
+    {
+      "fromCurrency": "EUR",
+      "toCurrency": "BRL",
+      "name": "Euro/Real Brasileiro",
+      "high": "6.2846",
+      "low": "6.1813",
+      "bidVariation": "0.0208",
+      "percentageChange": "0.34",
+      "bidPrice": "6.2002",
+      "askPrice": "6.2018",
+      "updatedAtTimestamp": "1631912335",
+      "updatedAtDate": "2021-09-17 17:58:55"
+    }
+  ]
+}
+`}
+                  </code>
+                </pre>
+              </details>
+            </p>
+
+            <p>
+              <details>
+                <summary>
+                  <strong>Pesquisar se a moeda existe</strong>
+                </summary>
+                <pre>
+                  <code>
+                    {`
+// GET https://brapi.ga/api/v2/currency/available?search=BRL
+// Se não for passado "?search=", é retornado todas as moedas disponíveis
+// É possível pesquisar tanto pelo nome da moeda quanto pelo código, ex: "BRL" ou "Real", "USD" ou "Dólar Americano"
+// Esse endpoint funciona muito bem para autocompletar campos de formulários
+
+{
+  "currencies": [
+    {
+      "name": "USD-BRL",
+      "currency": "Dólar Americano/Real Brasileiro"
+    },
+    {
+      "name": "USD-BRLT",
+      "currency": "Dólar Americano/Real Brasileiro Turismo"
+    },
+    {
+      "name": "CAD-BRL",
+      "currency": "Dólar Canadense/Real Brasileiro"
+    }
+    ...
   ]
 }
 `}

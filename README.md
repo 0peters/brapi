@@ -22,7 +22,7 @@ Na brapi, você tem acesso à cotação em tempo real das ações da Bovespa e c
 
 Funciona com Ações comuns com final 3 e 4. Também funciona com Fundos de Investimento com final 11.
 
-Também suportamos criptomoedas em diferentes moedas
+Também suportamos criptomoedas e conversão de moedas
 
 Saiba mais: [https://brapi.ga](https://brapi.ga)
 
@@ -74,6 +74,31 @@ Você pode buscar infomações de qualquer criptomoeda em qualquer moeda
       "marketCap": 4603348733480.141,
       "regularMarketTime": 1629063662,
       "coinImageUrl": "https://s.yimg.com/uc/fin/img/reports-thumbnails/1.png"
+    }
+  ]
+}
+```
+
+### Suportamos Moedas
+
+Você pode buscar infomações e converter várias moedas
+
+```json
+// https://brapi.ga/api/v2/currency?currency=USD-BRL
+{
+  "currency": [
+    {
+      "fromCurrency": "USD",
+      "toCurrency": "BRL",
+      "name": "Dólar Americano/Real Brasileiro",
+      "high": "5.3469",
+      "low": "5.2517",
+      "bidVariation": "0.0355",
+      "percentageChange": "0.68",
+      "bidPrice": "5.2885",
+      "askPrice": "5.2895",
+      "updatedAtTimestamp": "1631912338",
+      "updatedAtDate": "2021-09-17 17:58:58"
     }
   ]
 }
