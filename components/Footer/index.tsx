@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
           <br />
           <br />
           <a
-            href="https://vercel.com/?utm_source=alissonsleal&utm_campaign=oss"
+            href="https://vercel.com/?utm_source=alisson-oss&utm_campaign=oss"
             rel="noreferrer noopener"
             target="_blank"
           >

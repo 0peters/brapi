@@ -189,7 +189,7 @@ afetada por estes valores, assim como demais endpoints da API.
 
 <p align="center">
   <a
-  href="https://vercel.com/?utm_source=alissonsleal&utm_campaign=oss"
+  href="https://vercel.com/?utm_source=alisson-oss&utm_campaign=oss"
   rel="noreferrer noopener"
   target="\_blank">
   <img src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg" />
