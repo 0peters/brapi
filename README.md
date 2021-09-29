@@ -185,4 +185,13 @@ afetada por estes valores, assim como demais endpoints da API.
 
 <p align="center">
     <img  width="256" src="https://i.imgur.com/pY5brQ8.png">
-  </p>
+</p>
+
+<p align="center">
+  <a
+  href="https://vercel.com/?utm_source=alissonsleal&utm_campaign=oss"
+  rel="noreferrer noopener"
+  target="\_blank">
+  <img src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg" />
+  </a>
+</p>

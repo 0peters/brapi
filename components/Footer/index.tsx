@@ -59,6 +59,17 @@ const Footer: React.FC = () => {
               Compartilhe agora
             </a>
           </Link>
+          <br />
+          <br />
+          <br />
+          <br />
+          <a
+            href="https://vercel.com/?utm_source=alissonsleal&utm_campaign=oss"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            <img src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg" />
+          </a>
         </span>
       </div>
     </Container>
