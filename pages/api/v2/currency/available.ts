@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { NextApiRequest, NextApiResponse } from 'next';
-import { logHost } from '../../../../utils/logHost';
+// import { logHost } from '../../../../utils/logHost';
 import { sortObject } from '../../../../utils/sortObject';
 
 interface DataProps {
@@ -45,5 +45,5 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     currencies: sortObject(data),
   });
 
-  logHost(req, 'v2/crypto/available');
+  // logHost(req, 'v2/crypto/available');
 };

@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { logHost } from '../../../utils/logHost';
+// import { logHost } from '../../../utils/logHost';
 import { NextApiRequest, NextApiResponse } from 'next';
 import { QuoteProps } from '../../../@types/QuoteProps';
 
@@ -201,5 +201,5 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     await responseAllSlugs();
   }
 
-  logHost(req, 'quote');
+  // logHost(req, 'quote');
 };

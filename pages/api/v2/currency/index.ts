@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import axios from 'axios';
-import { logHost } from '../../../../utils/logHost';
+// import { logHost } from '../../../../utils/logHost';
 
 interface ResponseProps {
   [key: string]: {
@@ -79,5 +79,5 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     });
   }
 
-  logHost(req, 'v2/currency');
+  // logHost(req, 'v2/currency');
 };

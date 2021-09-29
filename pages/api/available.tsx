@@ -1,10 +1,10 @@
 import axios from 'axios';
-import { logHost } from '../../utils/logHost';
+// import { logHost } from '../../utils/logHost';
 import { NextApiRequest, NextApiResponse } from 'next';
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   const { search } = req.query;
-  res.setHeader('Cache-Control', 's-maxage=900, stale-while-revalidate');
+  res.setHeader('Cache-Control', 's-maxage=2592000, stale-while-revalidate');
 
   const formData = {
     filter: [
@@ -57,5 +57,5 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     stocks: uniqueStocks,
   });
 
-  logHost(req, 'available');
+  // logHost(req, 'available');
 };

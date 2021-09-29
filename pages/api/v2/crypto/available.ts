@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { availableCoins } from '../../../../utils/availableCoins';
-import { logHost } from '../../../../utils/logHost';
+// import { logHost } from '../../../../utils/logHost';
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   const { search } = req.query;
@@ -35,5 +35,5 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     coins: availableCoins,
   });
 
-  logHost(req, 'v2/crypto/available');
+  // logHost(req, 'v2/crypto/available');
 };

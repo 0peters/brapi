@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { logHost } from '../../../utils/logHost';
+// import { logHost } from '../../../utils/logHost';
 import { NextApiRequest, NextApiResponse } from 'next';
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
@@ -114,5 +114,5 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     stocks: uniqueStocks,
   });
 
-  logHost(req, 'list');
+  // logHost(req, 'list');
 };
