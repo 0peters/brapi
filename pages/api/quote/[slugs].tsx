@@ -10,11 +10,14 @@ interface LooseObject {
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   console.log(req.headers['user-agent']);
   if (req.headers['user-agent']?.includes('python-requests')) {
+    res.setHeader('Cache-Control', 's-maxage=2592000, stale-while-revalidate');
+
     res.status(403).json({
       error: true,
       message:
         'Your limit exceeded, please email us at brapi@protonmail.com for more information',
     });
+    return;
   }
   const { slugs } = req.query;
   const { interval } = req.query;
@@ -195,6 +198,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
             error: `Não encontramos a ação ${slug.toString().toUpperCase()}`,
             err: err,
           });
+          return;
         }
       });
 
