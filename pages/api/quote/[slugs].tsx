@@ -8,7 +8,6 @@ interface LooseObject {
 }
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
-  console.log(req.headers['user-agent']);
   if (req.headers['user-agent']?.includes('python-requests')) {
     res.setHeader('Cache-Control', 's-maxage=2592000, stale-while-revalidate');
 
@@ -194,20 +193,25 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
             return quote;
           }
         } catch (err) {
-          res.status(404).send({
-            error: `Não encontramos a ação ${slug.toString().toUpperCase()}`,
-            err: err,
-          });
-          return;
+          throw new Error(
+            `Não encontramos a ação ${slug.toString().toUpperCase()}`,
+          );
         }
       });
 
       const dynamicDate = new Date();
-      const actualData = await Promise.all(promises);
-      res.status(200).json({
-        results: actualData,
-        requestedAt: dynamicDate,
-      });
+      await Promise.all(promises)
+        .then((actualData) => {
+          res.status(200).json({
+            results: actualData,
+            requestedAt: dynamicDate,
+          });
+        })
+        .catch((err) => {
+          return res.status(404).json({
+            error: err.message,
+          });
+        });
     };
 
     await responseAllSlugs();
